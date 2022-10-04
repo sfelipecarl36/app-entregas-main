@@ -1,0 +1,107 @@
+.black{
+    background-color: rgb(10, 10, 10);
+    background-image: url('/assets/back.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .container1{
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .container2{
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .recomendado{
+        background-color: #FDD904;
+        width: 240px;height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 12px;
+    }
+
+    div.categoria{
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 8px !important;
+        background-image:url('/assets/catsanduiche.png') !important;
+        background-size: cover;
+    }
+
+    .imgrecomendado{
+        width: 150%;
+        height: 200%;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+    .logo{
+        background-image: url('/assets/logo.png');
+        background-repeat: no-repeat;
+        min-width: 90px;
+        min-height: 90px;
+        background-size: cover;
+        transform: translateX(35%)
+    }
+}
+
+ion-avatar{padding: 9px;}
+
+ion-title{
+    justify-content: center;
+    width: 100%;
+}
+
+.inforecomendado{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4{color: #0D0D0D;font-weight: 700;padding-left: 10px;padding-right: 10px;margin-top: 40px;
+font-family: Hind Kochi Medium;}
+h2{color: #0D0D0D;font-weight: 700;padding-left: 10px;padding-right: 10px;margin-top: -10px;
+font-family: Hind Kochi Bold;}
+
+ion-toolbar{
+    background-color: #0D0D0D;
+}
+
+.sliderecomendado{
+    width:240px !important;
+    height: 100px!important;
+    padding-right: 20px !important;
+}
+
+.slidecategoria{
+    width:70px!important;
+    height:70px!important;
+    background: #FDD904 !important;
+    border-radius: 15px !important;
+    margin-inline: 8px !important;
+    margin-top: 25px !important;   
+    transition-duration: 300ms !important;
+}
+
+.slidecategoria:active{
+    transition-duration: 300ms !important;  
+    width:75px !important;
+    height:75px !important;
+}

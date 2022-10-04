@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login" text="Voltar"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="true">
+  <div class="black">
+    <h1>Cadastro</h1>
+    <div class="logo"></div>
+  <div class="form">
+    <ion-item expand="full" lines="none" color="transparent">
+      <ion-label position="stacked">Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-item expand="full" lines="none" color="transparent">
+      <ion-label position="stacked">Sobrenome</ion-label>
+      <ion-input type="text" [(ngModel)]="sobrenome"></ion-input>
+    </ion-item>
+    <ion-item expand="full" lines="none" color="transparent">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item expand="full" lines="none" color="transparent">
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-item expand="full" lines="none" color="transparent">
+      <ion-label position="stacked">Confirmação de Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="confirmasenha"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" (click)="cadastrar()" >Cadastrar</ion-button>
+  </div>
+</div>
+</ion-content>

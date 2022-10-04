@@ -1,0 +1,35 @@
+<ion-content scroll-y="true">
+  <div class="black">
+    <div class="container1">
+      <p></p>
+      <div class="logo"></div>
+      <ion-avatar class="fotoperfil">
+        <img alt="Meu Perfil" src="assets/pp.jpg" [routerLink]="['/perfil']" />
+      </ion-avatar>    
+    </div>
+
+    <div class="c_pedido" *ngFor="let pedido of pedidos">
+      <div class="c_infopedido">
+        <ion-chip>
+        <ion-avatar>
+           <img alt="Motoboy" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg"/>
+        </ion-avatar>
+        <ion-label>{{pedido.motoboy}}</ion-label>
+        </ion-chip>
+        <p>{{pedido.data}} às {{pedido.hora}}<br>
+        R${{pedido.valor}}</p>
+        <div class="classificacao">
+          <ion-icon name="star" color="warning"></ion-icon>
+          <h6>Classificar</h6>
+        </div>
+      </div>
+
+      <div class="c_infopedido" *ngFor="let item of itens">
+        <p>
+          <br>{{item.quantidade}} {{item.nome}}
+        </p>
+      </div>
+      <ion-button (click)="alerta('Não clicável !')" color="warning">Ver Detalhes</ion-button>
+    </div>
+  </div>
+</ion-content>

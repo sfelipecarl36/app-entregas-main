@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="black">
+    <div class="container1">
+      <p></p>
+      <div class="logo"></div>
+      <ion-avatar>
+        <img alt="Meu Perfil" src="assets/pp.jpg" [routerLink]="['/perfil']" />
+      </ion-avatar>    
+    </div>
+    <div class="container2">
+      <h5>Recomendados</h5>
+      <ion-slides pager="false" [options]="slideOpts" >
+        
+        <ion-slide *ngFor="let produto of produtos | async" class="sliderecomendado">
+          <div class="recomendado">
+              <div class="inforecomendado">
+                <h4>{{produto.nome}}</h4>
+                <h2>R${{produto.preco}}</h2>
+              </div>
+              <div class="imgrecomendado" style="background-image:url('{{produto.img}}');"></div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+
+      <ion-slides pager="false" [options]="slideOpts2" >
+        
+        <ion-slide *ngFor="let categoria of categorias | async" class="slidecategoria">
+          <div class="categoria">
+              <p> </p>
+          </div>
+          <div class="box"></div>
+        </ion-slide>
+        
+      </ion-slides>
+
+    </div>
+  </div>
+</ion-content>

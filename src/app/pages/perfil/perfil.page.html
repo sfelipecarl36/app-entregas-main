@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start" defaultHref="home" text="Voltar"></ion-back-button>
+    <ion-title>Meu Perfil</ion-title>
+    <ion-button slot="end" (click)="sair()" color="danger" size="small">Sair</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content scroll-y="true">
+  <div class="black" *ngFor="let dado of dados">
+    <div class="fotoperfil"></div>
+    <h2>{{dado.nome}} {{dado.sobrenome}}</h2>
+    <div class="container">
+      <p>Endereços</p>
+    </div>
+    <div class="container">
+      <p>Pontos de Fidelidade</p>
+    </div>
+    <div class="container">
+      <p>Informações de Contato</p>
+    </div>
+    <div class="container">
+      <p>Exibir Nome no Pedido</p>
+      <ion-checkbox checked="true" color=""></ion-checkbox>
+    </div>
+    <div class="container">
+      <p>Notificações</p>
+      <ion-checkbox checked="true" color=""></ion-checkbox>
+    </div>
+    <div class="container">
+      <p>Receber Mensagens</p>
+      <ion-checkbox checked="true" color=""></ion-checkbox>
+    </div>
+    <div class="container-button">
+      <ion-button expand="block" color="warning">Salvar</ion-button> 
+    </div>
+  </div>
+</ion-content>
